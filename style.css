@@ -1,0 +1,160 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7f6;
+color:#333;
+line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+box-shadow:0 4px 20px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:700;
+color:#1b5e20;
+}
+
+.logo img{
+height:45px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#2e7d32;
+}
+
+/* ===== HERO ===== */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("hero.jpg") center/cover no-repeat;
+color:white;
+padding:0 20px;
+margin-top:80px;
+}
+
+.hero-content h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#2e7d32;
+color:white;
+padding:14px 30px;
+border-radius:6px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1b5e20;
+transform:translateY(-3px);
+}
+
+/* ===== SECTIONS ===== */
+.section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:34px;
+color:#1b5e20;
+}
+
+.center-text{
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+
+.light-bg{
+background:#ffffff;
+}
+
+/* ===== SERVICES ===== */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* ===== FOOTER ===== */
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* ===== FLOATING BUTTONS ===== */
+.floating-buttons{
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.whatsapp-btn,.call-btn{
+padding:12px 18px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.whatsapp-btn{background:#25D366;}
+.call-btn{background:#1b5e20;}
