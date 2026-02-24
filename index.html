@@ -5,211 +5,84 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TGS AGRO GLOBAL LIMITED</title>
 <link rel="stylesheet" href="style.css">
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f5f7f6;
-color:#333;
-line-height:1.6;
-}
-
-/* HEADER */
-header{
-position:fixed;
-top:0;
-width:100%;
-background:#fff;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-box-shadow:0 4px 20px rgba(0,0,0,0.05);
-z-index:1000;
-}
-
-.logo{
-font-weight:700;
-font-size:20px;
-color:#1b5e20;
-}
-
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#2e7d32;
-}
-
-/* HERO */
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:
-linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-url("hero.jpg") center/cover no-repeat;
-color:white;
-padding:0 20px;
-margin-top:80px;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:30px;
-}
-
-.btn{
-background:#2e7d32;
-color:white;
-padding:14px 30px;
-border-radius:6px;
-text-decoration:none;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#1b5e20;
-transform:translateY(-3px);
-}
-
-section{
-padding:100px 8%;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:60px;
-font-size:34px;
-color:#1b5e20;
-}
-
-/* SERVICES */
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.service-card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
-transition:0.3s;
-}
-
-.service-card:hover{
-transform:translateY(-10px);
-}
-
-/* FOOTER */
-footer{
-background:#1b5e20;
-color:white;
-text-align:center;
-padding:30px;
-}
-
-/* FLOATING BUTTONS */
-.floating-buttons{
-position:fixed;
-right:20px;
-bottom:20px;
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-.whatsapp-btn,.call-btn{
-padding:12px 18px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-font-size:14px;
-}
-
-.whatsapp-btn{background:#25D366;}
-.call-btn{background:#1b5e20;}
-</style>
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
-<div class="logo">TGS AGRO GLOBAL LIMITED</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+    <div class="logo">
+        <img src="logo.png" alt="TGS AGRO GLOBAL LIMITED Logo">
+        <span>TGS AGRO GLOBAL LIMITED</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
+<!-- ===== HERO ===== -->
 <section class="hero" id="home">
-<div>
-<h1>Transforming Agriculture Through Innovation</h1>
-<p>Smart farming solutions and agritech services across Nigeria.</p>
-<a href="#contact" class="btn">Get Started</a>
-</div>
+    <div class="hero-content">
+        <h1>Transforming Agriculture Through Innovation</h1>
+        <p>Smart farming solutions and agritech services across Nigeria.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </div>
 </section>
 
-<section id="about">
-<h2 class="section-title">About Us</h2>
-<p style="max-width:800px;margin:auto;text-align:center;">
-TGS AGRO GLOBAL LIMITED delivers modern agricultural solutions,
-farm consultancy, and smart farming innovations.
-</p>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+    <h2 class="section-title">About Us</h2>
+    <p class="center-text">
+        TGS AGRO GLOBAL LIMITED delivers modern agricultural solutions,
+        professional farm consultancy, and technology-driven farming systems.
+    </p>
 </section>
 
-<section id="services">
-<h2 class="section-title">Our Services</h2>
-<div class="services">
-<div class="service-card">
-<h3>Agricultural Consultancy</h3>
-<p>Professional farm planning and management support.</p>
-</div>
-<div class="service-card">
-<h3>Smart Farming</h3>
-<p>Technology-driven agricultural systems.</p>
-</div>
-<div class="service-card">
-<h3>Training</h3>
-<p>Farmer capacity building and agribusiness coaching.</p>
-</div>
-</div>
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section light-bg">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Agricultural Consultancy</h3>
+            <p>Professional farm planning and agribusiness support.</p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Farming Solutions</h3>
+            <p>Technology-powered systems for higher productivity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Training & Capacity Building</h3>
+            <p>Empowering farmers with modern agricultural skills.</p>
+        </div>
+    </div>
 </section>
 
-<section id="contact">
-<h2 class="section-title">Contact Us</h2>
-<p style="text-align:center;">Email: info@tgsagroglobal.com</p>
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="center-text">
+        Lagos, Nigeria <br>
+        Phone: 08057388145 <br>
+        Email: info@tgsagroglobal.com
+    </p>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-© 2026 TGS AGRO GLOBAL LIMITED | Lagos, Nigeria
+    © 2026 TGS AGRO GLOBAL LIMITED | All Rights Reserved
 </footer>
 
+<!-- Floating Buttons -->
 <div class="floating-buttons">
-<a href="https://wa.me/2348057388145" class="whatsapp-btn" target="_blank">WhatsApp</a>
-<a href="tel:08057388145" class="call-btn">Call</a>
+    <a href="https://wa.me/2348057388145" class="whatsapp-btn" target="_blank">WhatsApp</a>
+    <a href="tel:08057388145" class="call-btn">Call</a>
 </div>
 
 <script src="Script.js"></script>
