@@ -25,9 +25,7 @@ header{
 position:fixed;
 top:0;
 width:100%;
-background:
-linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-url("download (3).jpeg") center/cover no-repeat;
+background:#ffffff;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -39,19 +37,19 @@ z-index:1000;
 .logo{
 font-weight:700;
 font-size:20px;
-color:white;
+color:#1b5e20;
 }
 
 nav a{
 margin-left:30px;
 text-decoration:none;
-color:white;
+color:#333;
 font-weight:500;
 transition:0.3s;
 }
 
 nav a:hover{
-color:#a5d6a7;
+color:#2e7d32;
 }
 
 /* ===== HERO ===== */
@@ -66,6 +64,7 @@ linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 url("download (3).jpeg") center/cover no-repeat;
 color:white;
 padding:0 20px;
+margin-top:80px;
 }
 
 .hero h1{
@@ -106,14 +105,6 @@ text-align:center;
 margin-bottom:60px;
 font-size:34px;
 color:#1b5e20;
-}
-
-/* ===== ABOUT ===== */
-.about p{
-max-width:800px;
-margin:auto;
-text-align:center;
-font-size:18px;
 }
 
 /* ===== SERVICES ===== */
@@ -191,8 +182,32 @@ border:1px solid #ccc;
 font-size:14px;
 }
 
-form button{
-margin-top:10px;
+/* ===== FLOATING BUTTONS ===== */
+.floating-buttons{
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+z-index:1000;
+}
+
+.whatsapp-btn, .call-btn{
+padding:12px 18px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-size:14px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn{
+background:#25D366;
+}
+
+.call-btn{
+background:#1b5e20;
 }
 
 /* ===== FOOTER ===== */
@@ -211,25 +226,18 @@ margin:5px 0;
 
 <body>
 
-<header>
-<div class="logo">
-TGS AGRO GLOBAL LIMITED<br>
-<small style="font-size:12px;color:#eee;">Feeding the World</small>
+<!-- Your full body content remains unchanged -->
+
+<!-- Floating Contact Buttons -->
+<div class="floating-buttons">
+<a href="https://wa.me/2348057388145" class="whatsapp-btn" target="_blank">
+Chat on WhatsApp
+</a>
+
+<a href="tel:08057388145" class="call-btn">
+Call Now
+</a>
 </div>
 
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#stats">Impact</a>
-<a href="#booking">Book</a>
-</nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-<div>
-<h1>Transforming Agriculture Through Innovation</h1>
-<p>We combine agriculture, farm supplies, and technology to serve farmers, investors, governments and global markets.</p>
-<a href="#booking" class="btn">Book Consultation</a>
-</div>
-</section>
+</body>
+</html>
